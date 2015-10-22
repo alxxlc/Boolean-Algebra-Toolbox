@@ -1,6 +1,8 @@
 # Created by Alex Cote'
 # https://github.com/alxxlc/Boolean-Algebra-Toolbox
 
+# This is a module that can be used to change one boolean algebra equation into a new equation with a different type of operators.
+
 class ttConverter():
 	def __init__(self):
 		self.removeSpaces = True
