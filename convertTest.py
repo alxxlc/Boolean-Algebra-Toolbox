@@ -1,5 +1,7 @@
-# Made to be used with http://turner.faculty.swau.edu/mathematics/materialslibrary/truth/
-# Test equation: (AB') (A+C+D') (A+B+D')
+# Created by Alex Cote'
+# https://github.com/alxxlc/Boolean-Algebra-Toolbox
+
+# This is now just a test file to ensure that ttConverter.py is working properly.
 
 input("\n***Warning***:\nThis program automatically copies and pastes to and from your clipboard. If you have anything important copied, you should save it in an external source before continuing. Press any key to continue. Press Ctrl+C to exit this program.")
 
