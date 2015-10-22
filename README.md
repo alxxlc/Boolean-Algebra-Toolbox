@@ -9,7 +9,7 @@ The Converter will use both the "Old Symbols" and "New Symbols" from the Configu
 The Generator will look for symbols that you have set in the "New Symbols" settings in order to generate a truth table with the correct type of equation you have entered.
 
 ###Prerequisites
-This program requires Qt5 and Python 3 in order to run properly.
+This program requires Qt5, PyQt5, and Python 3 in order to run properly.
 
 ###How This is Being Developed
 I plan to make all the modules used in the program as portable as I can. Both the ttConverter.py and ttGenerator.py can be removed entirely from this program and used separately with other programs.
