@@ -22,7 +22,7 @@ class ttConverter():
 		self.newNot = "~"
 		# Variables used to determine if a not originally was made to go before or after a variable and ensure they are changed to the correct placement.
 		self.oldNotOrder = "suffix"
-		self.newNotOder = "prefix"
+		self.newNotOrder = "prefix"
 
 		self.changeCaseBool = True
 		self.newCase = "lower" # Either "capital" or "lower"
@@ -55,7 +55,7 @@ class ttConverter():
 		self.oldNot = tmpOldNot
 		self.oldNotOrder = tmpOldOrder
 		self.newNot = tmpNewNot
-		self.newNotOder = tmpNewOrder
+		self.newNotOrder = tmpNewOrder
 		if self.oldNot == self.newNot:
 			self.changeNotBool = False
 		else:
