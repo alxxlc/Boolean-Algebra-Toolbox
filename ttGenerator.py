@@ -39,18 +39,40 @@ class ttGenerator():
 		pass
 
 	def setEqLevels(self):
-		tmpEquation = list(self.equationStr)
-		curStepLevel = 0
+		# This was a bad idea but I'm keeping it in case I can use it for 
+		# something else.
 
-		for curIndex in range(0, len(self.equationStr)):
-			if tmpEquation[curIndex] == "(":
-				curStepLevel += 1
-				self.eqLevels.append(curStepLevel)
-			elif tmpEquation[curIndex] == ")":
-				self.eqLevels.append(curStepLevel)
-				curStepLevel -= 1
-			else:
-				self.eqLevels.append(curStepLevel)
+		# tmpEquation = list(self.equationStr)
+		# curStepLevel = 0
+		# baseStepLevel = 0
+
+		# for curIndex in range(len(self.equationStr)):
+		# 	if tmpEquation[curIndex] == "(":
+		# 		if curStepLevel == 0:
+		# 			curStepLevel = baseStepLevel
+		# 		curStepLevel += 1
+		# 		self.eqLevels.append(curStepLevel)
+		# 	elif tmpEquation[curIndex] == ")":
+		# 		self.eqLevels.append(curStepLevel)
+		# 		curStepLevel -= 1
+
+		# 		if curStepLevel == baseStepLevel:
+		# 			# Ensure that different sets of parentheses are seen as separate parts.
+		# 			baseStepLevel = max(self.eqLevels)
+		# 			curStepLevel = 0
+		# 	else:
+		# 		self.eqLevels.append(curStepLevel)
 
 	def generateTable(self):
 		pass
+
+# Design:
+
+# This should probably have some small function that anylizes the equation 
+# and ensures that there is no improper syntax. Once the generating begins, 
+# it might be best to have a recursive function that generates a truth value 
+# for each set of parentheses and calls itself again if there is a nested 
+# equation enclosed in parentheses.
+
+# I'm not sure how well this will work out but it seems a lot better than my 
+# original plan.

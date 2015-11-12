@@ -9,7 +9,7 @@ from ttGenerator import *
 
 testGen = ttGenerator()
 
-testGen.setEquation("(AVB') (AVCVD') (A+B+D')")
+testGen.setEquation("(AVB(CVD)')(AVCVD')(A+B+D')")
 testGen.setEqLevels()
 
 print(testGen.eqLevels)
